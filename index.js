@@ -17,7 +17,7 @@ client.on("connect", () => {
     // Génération d'une valeur de température aléatoire
     const temperature = Math.floor(Math.random() * (45 + 10) - 10);
 
-    // Publication de la valeur de température sur le sujet "temperature"
+    // Publication de la valeur de température sur le sujet "Temp"
     client.publish("Temp", temperature.toString());
     console.log(`Température publiée : ${temperature}`);
   }, 5000);
